@@ -1,0 +1,29 @@
+body {
+	background: radial-gradient(circle at bottom, rgb(30, 30, 30) 0%, rgb(15, 15, 15) 100%, transparent);
+	background-attachment: fixed;
+}
+
+.Button {
+	user-select: none;
+	color: rgb(183, 180, 96);
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 35px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Button :hover {
+	color: rgb(229, 227, 169);
+}
+
+.Content {
+	color: rgb(183, 180, 96);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 35px;
+	position: relative;
+	left: 80px;
+	width: fit-content;
+}
+
+[contenteditable] {
+	outline: 0px solid transparent;
+}
