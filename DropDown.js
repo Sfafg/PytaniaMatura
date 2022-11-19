@@ -2,43 +2,6 @@
 var dropDowns = document.getElementsByClassName("DropDown");
 var dropDownID = 0;
 
-var answerText =
-	[
-		{
-			"label": "Biblia",
-			"questions":
-				[
-					{
-						"label": "Pytanie 1.",
-						"answer":
-							"Główny bohater lektury, Józef...\nKontekst: Romeo i Julia - bohaterowie ...\nPodsumowując, można stwierdzić, że...\n"
-					}
-				]
-		},
-		{
-			"label": "Mitologia",
-			"questions":
-				[
-					{
-						"label": "Pytanie 1.",
-						"answer":
-							"Stefan jest indianinem z plemienia apaczy północno-wschodnich.\n"
-					},
-					{
-						"label": "Pytanie 2.",
-						"answer":
-							"No i wtedy przychodzi taki duży niedźwieć polarny.\n"
-					},
-					{
-						"label": "Pytanie 3.",
-						"answer":
-							"I wtedy Romeo odjeżdża w Alfa-Romeo w kierunku zachodzącego słońca, uciekając od miasta pełnego krwi i martwych ludzkich\n"
-					}
-				]
-		}
-	]
-
-
 function CreateDropDown(labelStr) {
 	var dropDownPrefab = document.createElement("div");
 	dropDownPrefab.setAttribute("class", "DropDown");
@@ -66,7 +29,7 @@ function CreateDropDown(labelStr) {
 }
 
 function Start() {
-	fetch('Answers.JSON').then(response => response.json()).then(data => {
+	fetch('https://raw.githubusercontent.com/Sfafg/PytaniaMatura/master/Answers.JSON').then(response => response.json()).then(data => {
 		for (let index = 0; index < data.length; index++) {
 			const element = data[index];
 
@@ -109,7 +72,7 @@ function DropDownFunction(index) {
 
 function SaveChangesFunction() {
 
-	fetch('DropDown.js', { method: 'POST', body: JSON.stringify(document.body), })
+	fetch('https://raw.githubusercontent.com/Sfafg/PytaniaMatura/master/Answers.JSON', { method: 'POST', body: JSON.stringify(document.body), })
 		.then((response) => response.json())
 		.then((data) => {
 			console.log('Success:', data);
