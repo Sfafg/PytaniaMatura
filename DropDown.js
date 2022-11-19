@@ -71,13 +71,5 @@ function DropDownFunction(index) {
 }
 
 function SaveChangesFunction() {
-
-	fetch('https://raw.githubusercontent.com/Sfafg/PytaniaMatura/master/Answers.JSON', { method: 'POST', body: JSON.stringify(document.body), })
-		.then((response) => response.json())
-		.then((data) => {
-			console.log('Success:', data);
-		})
-		.catch((error) => {
-			console.error('Error:', error);
-		});
+	JSON.stringify(document.body);
 }
