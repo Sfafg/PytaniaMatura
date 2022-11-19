@@ -13,6 +13,7 @@ function CreateDropDown(labelStr) {
 	let label = document.createElement("div");
 	label.setAttribute("class", "Label");
 	label.appendChild(document.createTextNode('-' + labelStr));
+	label.style.whiteSpace = "pre-line";
 
 	let content = document.createElement("div");
 	content.setAttribute("class", "Content");
