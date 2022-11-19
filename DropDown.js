@@ -1,9 +1,8 @@
-
-var dropDowns = document.getElementsByClassName("DropDown");
+var htmlBooks = [];
 var dropDownID = 0;
 
 function CreateDropDown(labelStr) {
-	var dropDownPrefab = document.createElement("div");
+	let dropDownPrefab = document.createElement("div");
 	dropDownPrefab.setAttribute("class", "DropDown");
 	dropDownPrefab.setAttribute("id", dropDownID);
 
@@ -23,45 +22,74 @@ function CreateDropDown(labelStr) {
 	dropDownPrefab.appendChild(button);
 	dropDownPrefab.appendChild(content);
 
-	dropDownID += 1;
+	dropDownID++;
 
 	return dropDownPrefab;
 }
 
+class Question {
+	label;
+	answer;
+	constructor(label, answer) {
+		this.label = label;
+		this.answer = answer;
+	}
+}
+class Book {
+	label;
+	questions;
+	constructor(label, question) {
+		this.label = label;
+		this.questions = question;
+	}
+	CreateHTML() {
+		let dropDown = CreateDropDown(this.label);
+		for (let index = 0; index < this.questions.length; index++) {
+			const question = this.questions[index];
+			let drop = CreateDropDown(question.label);
+
+			let inputField = document.createElement("d");
+			inputField.setAttribute("class", "AnswerField");
+			inputField.setAttribute("contenteditable", "true");
+			inputField.appendChild(document.createTextNode(question.answer));
+			inputField.style.whiteSpace = "pre-line";
+
+			drop.children[1].appendChild(inputField);
+			dropDown.children[1].appendChild(drop);
+		}
+
+		return dropDown;
+	}
+}
+function GetBook(htmlBook) {
+	let questions = [];
+	for (let index = 0; index < htmlBook.children[1].childElementCount; index++) {
+		const dropDown = htmlBook.children[1].children[index];
+
+		let label = dropDown.children[0].children[0].textContent;
+		let question = new Question(label.substr(1, label.length), dropDown.children[1].children[0].textContent);
+		questions.push(question);
+	}
+
+	let label = htmlBook.children[0].children[0].textContent;
+
+	return new Book(label.substr(1, label.length), questions);
+}
+
 function Start() {
-	fetch('https://raw.githubusercontent.com/Sfafg/PytaniaMatura/master/Answers.JSON').then(response => response.json()).then(data => {
+	fetch('Answers.JSON').then(response => response.json()).then(data => {
 		for (let index = 0; index < data.length; index++) {
-			const element = data[index];
+			const book = new Book(data[index].label, data[index].questions);
 
-			let dropDown = CreateDropDown(element.label);
-			for (let index = 0; index < element.questions.length; index++) {
-				const question = element.questions[index];
-
-				let drop = CreateDropDown(question.label);
-
-				let inputField = document.createElement("div");
-				inputField.setAttribute("class", "AnswerField");
-				inputField.setAttribute("contenteditable", "true");
-				inputField.appendChild(document.createTextNode(question.answer));
-				inputField.style.whiteSpace = "pre-line";
-
-				drop.children[1].appendChild(inputField);
-				dropDown.children[1].appendChild(drop);
-
-			}
-			document.body.appendChild(dropDown);
+			let htmlBook = book.CreateHTML();
+			htmlBooks.push(htmlBook)
+			document.body.appendChild(htmlBook);
 		}
 	});
 
-	SaveChangesFunction();
-
-	for (let index = 0; index < dropDowns.length; index++) {
-		let content = dropDowns[index].children[1];
-		content.style.display = "none";
-	}
 }
 function DropDownFunction(index) {
-	let content = dropDowns[index].children[1];
+	let content = document.getElementById(index).children[1];
 	if (content.style.display == "none") {
 		content.style.display = "";
 	}
@@ -71,5 +99,12 @@ function DropDownFunction(index) {
 }
 
 function SaveChangesFunction() {
-	JSON.stringify(document.body);
+	let books = [];
+
+	for (let index = 0; index < htmlBooks.length; index++) {
+		const htmlBook = htmlBooks[index];
+
+		books.push(GetBook(htmlBook));
+	}
+	console.log(JSON.stringify(books));
 }
