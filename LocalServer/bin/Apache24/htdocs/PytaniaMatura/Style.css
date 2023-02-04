@@ -1,0 +1,90 @@
+body {
+	background: radial-gradient(circle at top, rgb(37, 37, 37) 0%, rgb(7, 7, 7) 100%, transparent);
+	background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+div {
+	width: fit-content;
+	text-shadow: 0.15vw 0.15vw rgba(0, 0, 0, 0.374);
+}
+
+.Title {
+	color: rgb(117, 117, 117);
+	text-align: center;
+	font-family: monospace;
+	font-weight: 600;
+	text-shadow: 0.35vw 0.35vw black;
+	font-size: 50px;
+}
+
+.Stats {
+	color: rgb(164, 138, 21);
+	text-align: left;
+	font-family: monospace;
+	font-weight: 60;
+	font-size: 1.1vw;
+	z-index: inherit;
+}
+
+.StatBackground {
+	position: fixed;
+	right: 1vw;
+	top: 20px;
+	width: 10vw;
+	padding: 10px 10px 10px 10px;
+	background-color: rgb(75, 75, 75);
+	z-index: 100;
+}
+
+.DropDown {
+	padding: 10px 10px 10px 10px;
+	background-color: rgba(67, 67, 67, 0.06);
+}
+
+.Button {
+	user-select: none;
+	/* color: rgb(138, 183, 96); */
+	font-size: 20px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Button :hover {
+	filter: brightness(125%);
+}
+
+.Content {
+	background-color: rgba(255, 255, 255, 0.034);
+	color: rgb(183, 180, 96);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 22px;
+	position: relative;
+	max-width: 100vw;
+	min-height: 40px;
+	min-width: 10px;
+	padding-left: 20px;
+	margin-left: 40px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+[contenteditable] {
+	color: rgb(164, 161, 60);
+	outline: 0px solid transparent;
+	font-style: oblique;
+	min-height: 10px;
+	min-width: 40px;
+}
+
+[contenteditable]:hover {
+	color: rgb(131, 128, 38);
+}
