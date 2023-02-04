@@ -2,7 +2,7 @@
 Strona do organizacji opracowań pytań z matury ustnej. Hostowana lokalnie.
 
 ## Instalacja
-Po wyeksportowaniu uruchom plik Install_Serwer.bat i postępuj zgodnie z zaleceniami.
+Po wyeksportowaniu uruchom plik Install_Server.bat i postępuj zgodnie z zaleceniami.
 <br>
 ![InstallDemo](../Images/InstalledFolder.png?raw=true)
 ## Użytkowanie
