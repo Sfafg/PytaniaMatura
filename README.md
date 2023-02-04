@@ -9,7 +9,7 @@ Po wyeksportowaniu uruchom plik Serwer_Install.bat i postępuj zgodnie z zalecen
 By otworzyć strone wpisz w wyszukiwarce w pasku źródła strony "localhost".
 <br>
 ![UsageDemo](../Images/LocalHost.png?raw=true)
-<br>
+<br><br>
 Możesz też połączyć się z innych urządzeń wpisując w ten sam pasek ip swojego komputera.
 <br>
 ![UsageDemo2](../Images/IPKomputera.png?raw=true)
