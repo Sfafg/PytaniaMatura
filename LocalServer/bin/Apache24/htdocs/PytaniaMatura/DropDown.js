@@ -48,7 +48,7 @@ class Question {
 function CompletionState(question) {
 	if (question.answer == "...")
 		return 0;
-	else if (question.answer.slice(-6) != "c.n.d.") {
+	else if (question.answer.slice(-6) != "c.n.d." && question.answer.slice(-7) != "c.n.d.") {
 		return 1;
 	}
 	return 2;
