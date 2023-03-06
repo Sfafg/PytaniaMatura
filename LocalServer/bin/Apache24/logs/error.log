@@ -412,3 +412,65 @@ pm_winnt:notice] [pid 1004:tid 404] AH00455: Apache/2.4.55 (Win64) PHP/8.2.2 con
 [Sat Feb 04 11:41:40.937474 2023] [core:notice] [pid 1004:tid 404] AH00094: Command line: 'D:\\no_ja\\no JA\\Projekty\\WebDev\\PytaniaMatura\\LocalServer\\bin\\Apache24\\bin\\httpd.exe -d D:/no_ja/no JA/Projekty/WebDev/PytaniaMatura/LocalServer/bin/Apache24'
 [Sat Feb 04 11:41:40.953096 2023] [mpm_winnt:notice] [pid 1004:tid 404] AH00418: Parent: Created child process 14672
 [Sat Feb 04 11:41:41.468713 2023] [mpm_winnt:notice] [pid 14672:tid 452] AH00354: Child: Starting 64 worker threads.
+The 'Apache2.4' service is restarting.
+Starting the 'Apache2.4' service
+The 'Apache2.4' service is running.
+ore:warn] [pid 14724:tid 440] AH00098: pid file D:/no ja/no JA/Projekty/WebDev/PytaniaMatura/LocalServer/bin/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Feb 06 18:50:47.090503 2023] [mpm_winnt:notice] [pid 14724:tid 440] AH00455: Apache/2.4.55 (Win64) PHP/8.2.2 configured -- resuming normal operations
+[Mon Feb 06 18:50:47.090503 2023] [mpm_winnt:notice] [pid 14724:tid 440] AH00456: Apache Lounge VS17 Server built: Feb  1 2023 09:38:30
+[Mon Feb 06 18:50:47.090503 2023] [core:notice] [pid 14724:tid 440] AH00094: Command line: 'D:\\no ja\\no JA\\Projekty\\WebDev\\PytaniaMatura\\LocalServer\\bin\\Apache24\\bin\\httpd.exe -d D:/no ja/no JA/Projekty/WebDev/PytaniaMatura/LocalServer/bin/Apache24'
+[Mon Feb 06 18:50:47.095502 2023] [mpm_winnt:notice] [pid 14724:tid 440] AH00418: Parent: Created child process 16908
+[Mon Feb 06 18:50:47.856713 2023] [mpm_winnt:notice] [pid 16908:tid 436] AH00354: Child: Starting 64 worker threads.
+[Sun Feb 12 13:36:29.330252 2023] [mpm_winnt:notice] [pid 14724:tid 440] AH00428: Parent: child process 16908 exited with status 1 -- Restarting.
+[Sun Feb 12 13:36:32.365577 2023] [mpm_winnt:notice] [pid 14724:tid 440] AH00455: Apache/2.4.55 (Win64) PHP/8.2.2 configured -- resuming normal operations
+[Sun Feb 12 13:36:32.365577 2023] [mpm_winnt:notice] [pid 14724:tid 440] AH00456: Apache Lounge VS17 Server built: Feb  1 2023 09:38:30
+[Sun Feb 12 13:36:32.365577 2023] [core:notice] [pid 14724:tid 440] AH00094: Command line: 'D:\\no ja\\no JA\\Projekty\\WebDev\\PytaniaMatura\\LocalServer\\bin\\Apache24\\bin\\httpd.exe -d D:/no ja/no JA/Projekty/WebDev/PytaniaMatura/LocalServer/bin/Apache24'
+[Sun Feb 12 13:36:32.470931 2023] [mpm_winnt:notice] [pid 14724:tid 440] AH00418: Parent: Created child process 8356
+[Sun Feb 12 13:36:33.246571 2023] [mpm_winnt:notice] [pid 8356:tid 404] AH00354: Child: Starting 64 worker threads.
+[Sun Feb 19 01:14:57.919622 2023] [mpm_winnt:notice] [pid 14724:tid 440] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Feb 19 01:15:02.579675 2023] [mpm_winnt:notice] [pid 8356:tid 404] AH00364: Child: All worker threads have exited.
+[Sun Feb 19 01:16:16.657277 2023] [core:warn] [pid 4156:tid 388] AH00098: pid file D:/no ja/no JA/Projekty/WebDev/PytaniaMatura/LocalServer/bin/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Feb 19 01:16:18.446058 2023] [mpm_winnt:notice] [pid 4156:tid 388] AH00455: Apache/2.4.55 (Win64) PHP/8.2.2 configured -- resuming normal operations
+[Sun Feb 19 01:16:18.446058 2023] [mpm_winnt:notice] [pid 4156:tid 388] AH00456: Apache Lounge VS17 Server built: Feb  1 2023 09:38:30
+[Sun Feb 19 01:16:18.446058 2023] [core:notice] [pid 4156:tid 388] AH00094: Command line: 'D:\\no ja\\no JA\\Projekty\\WebDev\\PytaniaMatura\\LocalServer\\bin\\Apache24\\bin\\httpd.exe -d D:/no ja/no JA/Projekty/WebDev/PytaniaMatura/LocalServer/bin/Apache24'
+[Sun Feb 19 01:16:18.446058 2023] [mpm_winnt:notice] [pid 4156:tid 388] AH00418: Parent: Created child process 5832
+[Sun Feb 19 01:16:19.823131 2023] [mpm_winnt:notice] [pid 5832:tid 432] AH00354: Child: Starting 64 worker threads.
+[Sun Feb 19 01:17:26.713841 2023] [mpm_winnt:notice] [pid 4156:tid 388] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Feb 19 01:17:28.722477 2023] [mpm_winnt:notice] [pid 5832:tid 432] AH00364: Child: All worker threads have exited.
+[Sun Feb 19 01:17:28.769349 2023] [mpm_winnt:notice] [pid 4156:tid 388] AH00430: Parent: Child process 5832 exited successfully.
+[Sun Feb 19 09:44:48.825642 2023] [mpm_winnt:notice] [pid 4804:tid 388] AH00455: Apache/2.4.55 (Win64) PHP/8.2.2 configured -- resuming normal operations
+[Sun Feb 19 09:44:48.835700 2023] [mpm_winnt:notice] [pid 4804:tid 388] AH00456: Apache Lounge VS17 Server built: Feb  1 2023 09:38:30
+[Sun Feb 19 09:44:48.835700 2023] [core:notice] [pid 4804:tid 388] AH00094: Command line: 'D:\\no ja\\no JA\\Projekty\\WebDev\\PytaniaMatura\\LocalServer\\bin\\Apache24\\bin\\httpd.exe -d D:/no ja/no JA/Projekty/WebDev/PytaniaMatura/LocalServer/bin/Apache24'
+[Sun Feb 19 09:44:48.866478 2023] [mpm_winnt:notice] [pid 4804:tid 388] AH00418: Parent: Created child process 6728
+[Sun Feb 19 09:44:50.480002 2023] [mpm_winnt:notice] [pid 6728:tid 416] AH00354: Child: Starting 64 worker threads.
+[Tue Feb 28 16:26:55.500130 2023] [core:warn] [pid 4420:tid 388] AH00098: pid file D:/no ja/no JA/Projekty/WebDev/PytaniaMatura/LocalServer/bin/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Feb 28 16:26:55.942052 2023] [mpm_winnt:notice] [pid 4420:tid 388] AH00455: Apache/2.4.55 (Win64) PHP/8.2.2 configured -- resuming normal operations
+[Tue Feb 28 16:26:55.942052 2023] [mpm_winnt:notice] [pid 4420:tid 388] AH00456: Apache Lounge VS17 Server built: Feb  1 2023 09:38:30
+[Tue Feb 28 16:26:55.942052 2023] [core:notice] [pid 4420:tid 388] AH00094: Command line: 'D:\\no ja\\no JA\\Projekty\\WebDev\\PytaniaMatura\\LocalServer\\bin\\Apache24\\bin\\httpd.exe -d D:/no ja/no JA/Projekty/WebDev/PytaniaMatura/LocalServer/bin/Apache24'
+[Tue Feb 28 16:26:55.944079 2023] [mpm_winnt:notice] [pid 4420:tid 388] AH00418: Parent: Created child process 6108
+[Tue Feb 28 16:26:58.833381 2023] [mpm_winnt:notice] [pid 6108:tid 412] AH00354: Child: Starting 64 worker threads.
+[Sun Mar 05 10:44:28.029953 2023] [mpm_winnt:notice] [pid 4420:tid 388] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Sun Mar 05 10:44:31.100394 2023] [mpm_winnt:notice] [pid 6108:tid 412] AH00364: Child: All worker threads have exited.
+[Sun Mar 05 10:44:33.475226 2023] [mpm_winnt:notice] [pid 4420:tid 388] AH00430: Parent: Child process 6108 exited successfully.
+[Sun Mar 05 10:46:35.412264 2023] [mpm_winnt:notice] [pid 4856:tid 392] AH00455: Apache/2.4.55 (Win64) PHP/8.2.2 configured -- resuming normal operations
+[Sun Mar 05 10:46:35.427890 2023] [mpm_winnt:notice] [pid 4856:tid 392] AH00456: Apache Lounge VS17 Server built: Feb  1 2023 09:38:30
+[Sun Mar 05 10:46:35.427890 2023] [core:notice] [pid 4856:tid 392] AH00094: Command line: 'D:\\no ja\\no JA\\Projekty\\WebDev\\PytaniaMatura\\LocalServer\\bin\\Apache24\\bin\\httpd.exe -d D:/no ja/no JA/Projekty/WebDev/PytaniaMatura/LocalServer/bin/Apache24'
+[Sun Mar 05 10:46:35.474763 2023] [mpm_winnt:notice] [pid 4856:tid 392] AH00418: Parent: Created child process 6444
+[Sun Mar 05 10:46:44.478761 2023] [mpm_winnt:notice] [pid 6444:tid 408] AH00354: Child: Starting 64 worker threads.
+[Sun Mar 05 10:48:16.366697 2023] [core:warn] [pid 4968:tid 388] AH00098: pid file D:/no ja/no JA/Projekty/WebDev/PytaniaMatura/LocalServer/bin/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Mar 05 10:48:16.736969 2023] [mpm_winnt:notice] [pid 4968:tid 388] AH00455: Apache/2.4.55 (Win64) PHP/8.2.2 configured -- resuming normal operations
+[Sun Mar 05 10:48:16.736969 2023] [mpm_winnt:notice] [pid 4968:tid 388] AH00456: Apache Lounge VS17 Server built: Feb  1 2023 09:38:30
+[Sun Mar 05 10:48:16.736969 2023] [core:notice] [pid 4968:tid 388] AH00094: Command line: 'D:\\no ja\\no JA\\Projekty\\WebDev\\PytaniaMatura\\LocalServer\\bin\\Apache24\\bin\\httpd.exe -d D:/no ja/no JA/Projekty/WebDev/PytaniaMatura/LocalServer/bin/Apache24'
+[Sun Mar 05 10:48:16.749050 2023] [mpm_winnt:notice] [pid 4968:tid 388] AH00418: Parent: Created child process 6896
+[Sun Mar 05 10:48:18.370177 2023] [mpm_winnt:notice] [pid 6896:tid 428] AH00354: Child: Starting 64 worker threads.
+[Sun Mar 05 10:54:55.502806 2023] [core:warn] [pid 4760:tid 152] AH00098: pid file D:/no ja/no JA/Projekty/WebDev/PytaniaMatura/LocalServer/bin/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Mar 05 10:54:55.929095 2023] [mpm_winnt:notice] [pid 4760:tid 152] AH00455: Apache/2.4.55 (Win64) PHP/8.2.2 configured -- resuming normal operations
+[Sun Mar 05 10:54:55.929095 2023] [mpm_winnt:notice] [pid 4760:tid 152] AH00456: Apache Lounge VS17 Server built: Feb  1 2023 09:38:30
+[Sun Mar 05 10:54:55.929095 2023] [core:notice] [pid 4760:tid 152] AH00094: Command line: 'D:\\no ja\\no JA\\Projekty\\WebDev\\PytaniaMatura\\LocalServer\\bin\\Apache24\\bin\\httpd.exe -d D:/no ja/no JA/Projekty/WebDev/PytaniaMatura/LocalServer/bin/Apache24'
+[Sun Mar 05 10:54:55.929095 2023] [mpm_winnt:notice] [pid 4760:tid 152] AH00418: Parent: Created child process 6704
+[Sun Mar 05 10:54:57.471534 2023] [mpm_winnt:notice] [pid 6704:tid 420] AH00354: Child: Starting 64 worker threads.
+[Sun Mar 05 18:35:07.879518 2023] [core:warn] [pid 4772:tid 420] AH00098: pid file D:/no ja/no JA/Projekty/WebDev/PytaniaMatura/LocalServer/bin/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Mar 05 18:35:08.342470 2023] [mpm_winnt:notice] [pid 4772:tid 420] AH00455: Apache/2.4.55 (Win64) PHP/8.2.2 configured -- resuming normal operations
+[Sun Mar 05 18:35:08.342470 2023] [mpm_winnt:notice] [pid 4772:tid 420] AH00456: Apache Lounge VS17 Server built: Feb  1 2023 09:38:30
+[Sun Mar 05 18:35:08.342470 2023] [core:notice] [pid 4772:tid 420] AH00094: Command line: 'D:\\no ja\\no JA\\Projekty\\WebDev\\PytaniaMatura\\LocalServer\\bin\\Apache24\\bin\\httpd.exe -d D:/no ja/no JA/Projekty/WebDev/PytaniaMatura/LocalServer/bin/Apache24'
+[Sun Mar 05 18:35:08.342470 2023] [mpm_winnt:notice] [pid 4772:tid 420] AH00418: Parent: Created child process 5820

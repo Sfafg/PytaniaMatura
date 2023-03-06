@@ -123,9 +123,11 @@ function GetBook(htmlBook) {
 function Update() {
 
 	complitedCount = 0;
+	totalCount = 0;
 	htmlBooks.forEach(element => {
 		const book = GetBook(element);
 
+		totalCount += book.questions.length;
 		book.questions.forEach(question => {
 			if (CompletionState(question) == 2) {
 				complitedCount++;
@@ -140,9 +142,9 @@ function Update() {
 	const dayCount = (dateTo - dateFrom) / dayInMiliseconds;
 
 	document.getElementsByClassName("Stats")[0].textContent =
-		"Pytania: " + complitedCount + "/227\n" +
+		"Pytania: " + complitedCount + "/" + totalCount + "\n" +
 		"Dni: " + Math.floor(dayCount) + "\n" +
-		"Dziennie: " + Math.ceil((227 - complitedCount) / dayCount * 100) / 100;
+		"Dziennie: " + Math.ceil((totalCount - complitedCount) / dayCount * 100) / 100;
 
 
 	htmlBooks.forEach(element => {
@@ -172,7 +174,7 @@ function Update() {
 }
 
 function Start() {
-	fetch('Answers.JSON').then(response => response.json()).then(data => {
+	fetch('newAnswers.JSON').then(response => response.json()).then(data => {
 
 		complitedCount = 0;
 		for (let index = 0; index < data.length; index++) {
