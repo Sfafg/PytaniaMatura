@@ -174,7 +174,7 @@ function Update() {
 }
 
 function Start() {
-	fetch('newAnswers.JSON').then(response => response.json()).then(data => {
+	fetch('https://github.com/Sfafg/PytaniaMatura/blob/WebSite/newAnswers.json').then(response => response.json()).then(data => {
 
 		complitedCount = 0;
 		for (let index = 0; index < data.length; index++) {
@@ -203,29 +203,4 @@ function DropDownFunction(index) {
 	else {
 		content.style.display = "none";
 	}
-}
-
-function SaveChangesFunction() {
-	let books = [];
-
-	for (let index = 0; index < htmlBooks.length; index++) {
-		const htmlBook = htmlBooks[index];
-
-		books.push(GetBook(htmlBook));
-	}
-
-	fetch("submit.php", {
-		method: "post",
-		body: JSON.stringify(books),
-		headers: {
-			"Content-Type": "application/json"
-		}
-	}).catch(function (error) {
-		console.error(error);
-	});
-}
-
-function OnInputFunction() {
-	SaveChangesFunction()
-	Update();
 }
